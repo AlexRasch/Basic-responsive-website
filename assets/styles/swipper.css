@@ -1,5 +1,5 @@
 .content .imgbox {
-    width: 500px;
+    width: 300px;
     display: flex;
     justify-content:flex-end;
 }
@@ -17,8 +17,8 @@
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 240px;
-    height: 300px;
+    width: 140px;
+    height: 150px;
     display: flex;
     justify-content: center;
 }
