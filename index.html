@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/app.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,7 @@
             <a href="#">
                 <img src="assets/logo.png" class="logo" />
             </a>
+            <div class="toggle" onclick="toggleMenu()"></div>
             <ul class="navigation">
                 <li>
                     <a href="#">Home</a>
@@ -47,18 +49,10 @@
             <div class="imgbox">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/images/1.png" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/2.png" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/3.png" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/4.png" />
-                        </div>
+                        <div class="swiper-slide"><img src="assets/images/1.png" ></div>
+                        <div class="swiper-slide"><img src="assets/images/2.png" ></div>
+                        <div class="swiper-slide"><img src="assets/images/3.png" ></div>
+                        <div class="swiper-slide"><img src="assets/images/4.png" ></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -79,11 +73,11 @@
         </ul>
     </section>
     <script>
-        var swiper = new Swiper(".swiper-container", {
-            effect: "coverflow",
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
-            slidesPerView: "auto",
+            slidesPerView: 'auto',
             coverflowEffect: {
                 rotate: 0,
                 stretch: 0,
@@ -92,7 +86,7 @@
                 slideShadows: true,
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: '.swiper-pagination',
             },
             loop:true,
         });
