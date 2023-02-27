@@ -63,6 +63,19 @@ header .navigation li a {
     text-decoration: none;
     margin-left: 40px;
 }
+@media (max-width: 991px){
+    header{
+        padding:40px
+    }
+    section {
+        padding: 150px 40px;
+    }
+    .social-icons {
+        left:40px
+    }
+    
+}
+
 
 /* Content */
 .content {
@@ -119,7 +132,7 @@ header .navigation li a {
 
 .social-icons li a{
     display: inline-block;
-    margin: 0 15px 0 15px;
+    margin: 0 10px 0 10px;
     background: #222;
     width: 50px;
     height: 50px;

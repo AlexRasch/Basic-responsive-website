@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
     <link rel="stylesheet" href="assets/styles/theme.css">
+    <link rel="stylesheet" href="assets/styles/swipper.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
@@ -41,9 +43,28 @@
                 </p>
                 <a href="#">Ipsum ipsum</a>
             </div>
+            <!-- Swipper-->
+            <div class="imgbox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/4.png" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
         <!-- Social icons-->
-        <!-- Todo find better icons -->
         <ul class="social-icons">
             <li>
                 <a href="#"><img src="assets/images/social/facebook.png" /></a>
@@ -57,7 +78,25 @@
 
         </ul>
     </section>
-
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop:true,
+        });
+    </script>
 </body>
 
 </html>
