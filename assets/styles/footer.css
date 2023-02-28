@@ -1,0 +1,36 @@
+/* Social icons */
+.social-icons {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons li a {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    background: #222;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.social-icons li a:hover {
+    background: #e51e2a;
+    transform: translateY(-10%);
+}
+
+.social-icons li a img {
+    filter: brightness(0) invert(1);
+    transform: scale(0.5);
+}
