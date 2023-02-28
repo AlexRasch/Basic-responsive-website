@@ -9,89 +9,189 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="assets/styles/theme.css">
     <link rel="stylesheet" href="assets/styles/swipper.css">
-    <link rel="stylesheet" href="assets/styles/footer.css">
+    <!-- <link rel="stylesheet" href="assets/styles/footer.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="assets/scripts/app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-    <section>
+    <header>
         <div class="circle"></div>
-        <header>
-            <a href="#">
-                <img src="assets/logo.png" class="logo" />
-            </a>
-            <div class="toggle" onclick="toggleMenu()"></div>
-            <ul class="navigation">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Lorum</a>
-                </li>
-                <li>
-                    <a href="#">Ipsum</a>
-                </li>
-            </ul>
-        </header>
-        <!-- Content -->
-        <div class="content">
-            <div class="textbox">
-                <h1>Lorum Ipsum</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae delectus adipisci porro dicta
-                    dolorem! Amet aliquid numquam nam. Nemo incidunt at vero perspiciatis delectus sequi suscipit quos,
-                    debitis fugiat voluptates.
-                </p>
-                <a href="#">Ipsum ipsum</a>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/logo.png" alt="Company name" height="40">
+                    Company
+                </a>
             </div>
-            <!-- Swipper-->
-            <div class="imgbox">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="assets/images/1.png"></div>
-                        <div class="swiper-slide"><img src="assets/images/2.png"></div>
-                        <div class="swiper-slide"><img src="assets/images/3.png"></div>
-                        <div class="swiper-slide"><img src="assets/images/4.png"></div>
+        </nav>
+        <div class="contain-fluid pb-5 mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Lorum Ipsum</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae delectus adipisci porro dicta
+                        dolorem! Amet aliquid numquam nam. Nemo incidunt at vero perspiciatis delectus sequi suscipit
+                        quos, debitis fugiat voluptates.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius impedit reprehenderit quisquam.
+                        Aliquam quas, aperiam quos, illum quam nemo quidem neque culpa ipsa nesciunt et voluptatem
+                        necessitatibus dolorum similique officia.
+                    </p>
+                    <a class="btn-cta" href="#">Ipsum ipsum</a>
+                </div>
+                <div class="col-md-6">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/1.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/2.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/3.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/4.png" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
-        <footer>
-            <!-- Social icons-->
-            <ul class="social-icons">
-                <li>
-                    <a href="#"><img src="assets/images/social/facebook.png" loading="lazy" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="assets/images/social/youtube.png" loading="lazy" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="assets/images/social/linkedin.png" loading="lazy" /></a>
-                </li>
-    
-            </ul>
-        </footer>
+    </header>
+    <section class="contain-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="max-width:300px;">
+                    <img src="assets/images/1.png" class="card-img-top" alt="lorum ipsum">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorum</h5>
+                        <p class="card-text color-black">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, perferendis culpa. Placeat
+                            perferendis a corporis.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-success">View</a>
+                        <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="max-width:300px;">
+                    <img src="assets/images/2.png" class="card-img-top" alt="lorum ipsum">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorum</h5>
+                        <p class="card-text color-black">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, perferendis culpa. Placeat
+                            perferendis a corporis.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-success">View</a>
+                        <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="max-width:300px;">
+                    <img src="assets/images/3.png" class="card-img-top" alt="lorum ipsum">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorum</h5>
+                        <p class="card-text color-black">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, perferendis culpa. Placeat
+                            perferendis a corporis.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-success">View</a>
+                        <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="max-width:300px;">
+                    <img src="assets/images/4.png" class="card-img-top" alt="lorum ipsum">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorum</h5>
+                        <p class="card-text color-black">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, perferendis culpa. Placeat
+                            perferendis a corporis.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-success">View</a>
+                        <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!--<footer>
+        Social icons
+        <ul class="social-icons">
+            <li>
+                <a href="#"><img src="assets/images/social/facebook.png" loading="lazy" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/images/social/youtube.png" loading="lazy" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/images/social/linkedin.png" loading="lazy" /></a>
+            </li>
 
+        </ul>
+    </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/app.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.mySwiper', {
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
+            autoplay: {
+                delay: 5000,
+            },
             coverflowEffect: {
                 rotate: 0,
                 stretch: 0,
                 depth: 200,
                 modifier: 1,
-                slideShadows: true,
+                slideShadows: false,
             },
-            /*pagination: {
+            pagination: {
                 el: '.swiper-pagination',
-            },*/
+            },
             loop: true,
         });
     </script>

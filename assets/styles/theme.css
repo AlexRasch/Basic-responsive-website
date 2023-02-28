@@ -1,22 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+html, body {
     background: #161616;
 }
 
-section .circle {
+.contain-fluid {
+    padding: 20px 100px;
+}
+
+header h1, header h2, header h3,
+header p,
+section h1, section h2
+{
+    color: #fff;
+}
+
+
+/* Header */
+header .contain-fluid{
+    position: relative;
+    z-index: 10;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #161616;
+}
+
+header .circle {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,74 +35,9 @@ section .circle {
     height: 100%;
     background: #e51e2a;
     clip-path: circle(70% at right -20%);
+    z-index: 0;
 }
-
-/* Small fix for logo */
-header img {
-    filter: brightness(0) invert(1);
-}
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo {
-    position: relative;
-    max-width: 150px;
-}
-
-header .navigation {
-    position: relative;
-    display: flex;
-}
-
-header .navigation li {
-    list-style: none;
-}
-
-header .navigation li a {
-    display: inline-block;
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
-}
-
-/* Content */
-.content {
-    position: relative;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.content .textbox {
-    position: relative;
-    max-width: 600px;
-    margin-right: 20px;
-}
-
-.content .textbox h1 {
-    color: #fff;
-    font-size: 3em;
-    margin-bottom: 10px;
-    line-height: 1.5em;
-    font-weight: 700;
-}
-
-.content .textbox p {
-    color: #fff;
-}
-
-.content .textbox a {
+header .btn-cta {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
@@ -103,77 +49,13 @@ header .navigation li a {
     letter-spacing: 1px;
 }
 
-/* Responsive */
-@media (max-width: 991px) {
-    header {
-        padding: 40px
-    }
+/* Navigation */
+.navbar-brand img {
+    filter: brightness(0) invert(1);
+}
 
-    section {
-        padding: 150px 40px;
-    }
 
-    header .navigation {
-        display: none;
-    }
-
-    header .navigation.active {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #e51e2a;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-    }
-    header .navigation li a {
-        font-size: 1.5em;
-        font-weight: 300;
-        margin: 10px 0;
-    }
-
-    .toggle {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background-image: url('/assets/menu.png');
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-        z-index: 100;
-        filter: brightness(0) invert(1);
-    }
-
-    .toggle.active {
-        position: fixed;
-        right: 25px;
-        background-image: url('/assets/close.png');
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .social-icons {
-        left: 40px
-    }
-
-    .content {
-        flex-direction: column;
-        /* ^ */
-    }
-
-    .content .textbox,
-    .content .imgbox {
-        max-width: 100%;
-    }
-
-    .swiper-slide {
-        height: 300px
-    }
-
+/* Section */
+section {
+    background: #161616;
 }

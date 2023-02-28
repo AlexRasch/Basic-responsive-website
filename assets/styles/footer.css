@@ -1,3 +1,11 @@
+footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Social icons */
 .social-icons {
     position: absolute;
