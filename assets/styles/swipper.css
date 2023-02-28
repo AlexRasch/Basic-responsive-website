@@ -1,11 +1,13 @@
 .content .imgbox {
-    width: 300px;
     display: flex;
-    justify-content:flex-end;
+    justify-items: flex-end;
+    width: 100px;
+    padding-top: 100px;
+    padding-left: 20px;
 }
 
 .content .imgbox img {
-    max-width: 140px;
+    max-width: 130px;
 }
 
 .swiper-container {
@@ -20,7 +22,7 @@
     width: 140px;
     height: 150px;
     display: flex;
-    justify-content: center;
+    
 }
 
 .swiper-container img {
@@ -32,4 +34,25 @@
 .swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-right {
     background-image: none;
+}
+
+@media (max-width: 991px) {
+    .content{
+        display: flex;
+        justify-items: center;
+        gap: 50px;
+        /* width: 100px;
+        padding-top: 150px;
+        padding-bottom: 20px; */
+    }
+    .imgbox {
+        display: flex;
+        justify-content: center;      
+    }
+
+  .social-icons{
+    display: flex;
+    padding-left: 30px;
+  }
+
 }
