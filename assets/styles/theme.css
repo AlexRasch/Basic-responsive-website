@@ -38,3 +38,10 @@ footer .container-fluid {
     }
 }
 
+
+/* Extra */
+.z-index-100 {
+    position: relative;
+    z-index: 100;
+}
+

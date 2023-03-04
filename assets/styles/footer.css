@@ -4,6 +4,14 @@ footer {
 
 }
 
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #e51e2a;
+}
+
 /* Social icons */
 .social-icons a {
     display: inline-block;
