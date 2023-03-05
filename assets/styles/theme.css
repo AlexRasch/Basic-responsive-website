@@ -16,13 +16,7 @@ footer h3 {
 
 
 /* Layout */
-header .container-fluid,
-section .container-fluid,
-footer .container-fluid {
-    padding: 20px 200px;
-}
-
-@media only screen and (max-width: 576px) {
+@media (max-width: 576px) {
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
@@ -30,11 +24,35 @@ footer .container-fluid {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width:577px) {
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
         padding:10px 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px){
+    header .container-fluid,
+    section .container-fluid,
+    footer .container-fluid {
+        padding: 20px 80px;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    header .container-fluid,
+    section .container-fluid,
+    footer .container-fluid {
+        padding: 20px 100px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    header .container-fluid,
+    section .container-fluid,
+    footer .container-fluid {
+        padding: 20px 200px;
     }
 }
 
