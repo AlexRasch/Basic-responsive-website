@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconect-->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous" />
     <title>Responsive Website</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="assets/styles/theme.css">
@@ -22,7 +24,7 @@
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="/assets/logo.png" alt="Company name" height="40">
+                    <img src="/assets/logo.png" alt="Company name" height="30" class="d-inline-block align-text-top">
                     Company
                 </a>
             </div>
@@ -50,16 +52,32 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="assets/images/1.png" />
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/images/1.png" />
+                                    <source media="(min-width: 769px)" srcset="assets/images/1_.png" />
+                                    <img src="assets/images/1_.png" class="card-img-top" alt="lorum ipsum" />
+                                </picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/2.png" />
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/images/2.png" />
+                                    <source media="(min-width: 769px)" srcset="assets/images/2_.png" />
+                                    <img src="assets/images/2_.png" class="card-img-top" alt="lorum ipsum" />
+                                </picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/3.png" />
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/images/3.png" />
+                                    <source media="(min-width: 769px)" srcset="assets/images/3_.png" />
+                                    <img src="assets/images/3_.png" class="card-img-top" alt="lorum ipsum" />
+                                </picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/4.png" />
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/images/4.png" />
+                                    <source media="(min-width: 769px)" srcset="assets/images/4_.png" />
+                                    <img src="assets/images/4_.png" class="card-img-top" alt="lorum ipsum" />
+                                </picture>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -74,7 +92,11 @@
                 <h2>Products</h2>
                 <div class="col-sm-12 col-md-6 col-xl-3">
                     <div class="card mb-3" style="max-width:100%;">
-                        <img src="assets/images/1.png" class="card-img-top" alt="lorum ipsum">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="assets/images/1.png" />
+                            <source media="(min-width: 769px)" srcset="assets/images/1_.png" />
+                            <img src="assets/images/1_.png" class="card-img-top" alt="lorum ipsum" />
+                        </picture>
                         <div class="card-body">
                             <h5 class="card-title">Lorum</h5>
                             <p class="card-text color-black">
@@ -95,7 +117,11 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-xl-3">
                     <div class="card mb-3" style="max-width:100%;">
-                        <img src="assets/images/2.png" class="card-img-top" alt="lorum ipsum">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="assets/images/2.png" />
+                            <source media="(min-width: 769px)" srcset="assets/images/2_.png" />
+                            <img src="assets/images/2_.png" class="card-img-top" alt="lorum ipsum" />
+                        </picture>
                         <div class="card-body">
                             <h5 class="card-title">Lorum</h5>
                             <p class="card-text color-black">
@@ -116,7 +142,11 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-xl-3">
                     <div class="card mb-3" style="max-width:100%;">
-                        <img src="assets/images/3.png" class="card-img-top" alt="lorum ipsum">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="assets/images/3.png" />
+                            <source media="(min-width: 769px)" srcset="assets/images/3_.png" />
+                            <img src="assets/images/3_.png" class="card-img-top" alt="lorum ipsum" />
+                        </picture>
                         <div class="card-body">
                             <h5 class="card-title">Lorum</h5>
                             <p class="card-text color-black">
@@ -137,7 +167,11 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-xl-3">
                     <div class="card mb-3" style="max-width:100%;">
-                        <img src="assets/images/4.png" class="card-img-top" alt="lorum ipsum">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="assets/images/4.png" />
+                            <source media="(min-width: 769px)" srcset="assets/images/4_.png" />
+                            <img src="assets/images/4_.png" class="card-img-top" alt="lorum ipsum" />
+                        </picture>
                         <div class="card-body">
                             <h5 class="card-title">Lorum</h5>
                             <p class="card-text color-black">
