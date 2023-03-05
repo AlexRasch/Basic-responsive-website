@@ -1,17 +1,27 @@
 footer {
-    border-top: 5px solid #e51e2a;
+    border-top: 5px solid var(--theme-primary);
     padding-top: 20px;
 
 }
 
+footer .contain-fluid{
+    position: relative;
+    z-index: 100;
+}
+
+footer {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 footer a {
-    color: #fff;
+    color: var(--theme-link);
 }
 
 footer a:hover {
-    color: #e51e2a;
+    color: var(--theme-primary);
 }
-
 /* Social icons */
 .social-icons a {
     display: inline-block;
@@ -27,7 +37,7 @@ footer a:hover {
 }
 
 .social-icons a:hover {
-    background: #e51e2a;
+    background: var(--theme-primary);
     transform: translateY(-10%);
 }
 

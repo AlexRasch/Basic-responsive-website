@@ -1,31 +1,16 @@
-/*  Colors */
-header h1,
-header h2,
-header h3,
-header p,
-section h1,
-section h2,
-section p,
-footer h3 {
-    color: #fff;
-}
-
-.card-text {
-    color: black;
-}
-
-
 /*  Layout
     https://getbootstrap.com/docs/5.0/layout/breakpoints/
 */
-
-
 /* sm */
 @media (max-width: 576px) {
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
-        padding:10px 20px;
+        padding:16px 32px;
+    }
+
+    header .circle {
+        clip-path: circle(65% at right -25%);
     }
 }
 
@@ -34,19 +19,26 @@ footer h3 {
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
-        padding:10px 20px;
+        padding:24px 40px;
+    }
+
+    header .circle {
+        clip-path: circle(65% at right -25%);
     }
 }
 
 /* lg */
-@media only screen and (max-width: 992px) and (min-width: 769px){
+@media only screen and (max-width: 1200px) and (min-width: 769px){
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
-        padding: 20px 80px;
+        padding: 32px 80px;
     }
 
-    
+    header .circle {
+        clip-path: circle(65% at right -25%);
+    }
+
 }
 
 /* xl */
@@ -54,7 +46,11 @@ footer h3 {
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
-        padding: 20px 100px;
+        padding: 40px 128px;
+    }
+
+    header .circle {
+        clip-path: circle(65% at right -25%);
     }
 }
 
@@ -64,6 +60,10 @@ footer h3 {
     section .container-fluid,
     footer .container-fluid {
         padding: 20px 200px;
+    }
+
+    header .circle {
+        clip-path: circle(70% at right -20%);
     }
 }
 

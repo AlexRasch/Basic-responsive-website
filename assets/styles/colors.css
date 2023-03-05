@@ -1,0 +1,29 @@
+/* Colors */
+:root {
+    --theme-primary:#e51e2a;
+    --theme-secondary:#222;
+    /*  */
+
+    /* Content */
+    --theme-h:#fff;
+    --theme-text:#fff;
+    --theme-link:#fff;
+    --theme-link-hover:var(--theme-primary);
+    --theme-text:#fff;
+}
+
+header h1,
+header h2,
+header h3,
+header p,
+section h1,
+section h2,
+section p,
+footer h3 {
+    color: #fff;
+}
+
+.card-text {
+    color: black;
+}
+
