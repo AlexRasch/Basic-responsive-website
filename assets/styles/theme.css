@@ -18,6 +18,11 @@ html {
     header .circle {
         clip-path: circle(65% at right -25%);
     }
+
+    .card-img-top {
+        max-height: 300px;
+        max-width: 240px;
+    } 
 }
 
 /* md */
