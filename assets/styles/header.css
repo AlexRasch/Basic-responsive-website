@@ -1,18 +1,12 @@
-/* 
-    Header & Navigation 
-*/
 header .contain-fluid{
     position: relative;
     z-index: 100;
 }
-
 header {
     top: 0;
     left: 0;
     width: 100%;
 }
-
-
 header .circle {
     position: absolute;
     top: 0;
@@ -22,18 +16,15 @@ header .circle {
     background: var(--theme-primary);
     z-index: 0;
 }
-
 header .btn-cta {
 
     margin-top: 20px;
 }
-
 header .btn-cta:hover {
     background: #fff;
     color:var(--theme-primary);
     border: 2px solid var(--theme-primary);
 }
-
 /* Navigation */
 .navbar {
     border-bottom: 4px solid var(--theme-primary);

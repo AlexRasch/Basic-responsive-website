@@ -2,8 +2,10 @@
 :root {
     --theme-primary:#e51e2a;
     --theme-secondary:#222;
-    /*  */
 
+    /*  */
+    --theme-bg-dark:#222;
+    --theme-bg-light:#fff;
     /* Content */
     --theme-h:#fff;
     --theme-text:#fff;
