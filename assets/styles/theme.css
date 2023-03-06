@@ -1,14 +1,18 @@
 /*  Layout
     https://getbootstrap.com/docs/5.0/layout/breakpoints/
 */
+html {
+    scroll-behavior: smooth;
+}
 
 
 /* sm */
 @media (max-width: 576px) {
+
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
-        padding:16px 32px;
+        padding: 16px 32px;
     }
 
     header .circle {
@@ -18,10 +22,11 @@
 
 /* md */
 @media only screen and (max-width: 768px) and (min-width:577px) {
+
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
-        padding:24px 40px;
+        padding: 24px 40px;
     }
 
     header .circle {
@@ -30,7 +35,8 @@
 }
 
 /* lg */
-@media only screen and (max-width: 1200px) and (min-width: 769px){
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
@@ -45,6 +51,7 @@
 
 /* xl */
 @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
@@ -58,6 +65,7 @@
 
 /* xxl */
 @media only screen and (min-width: 1400px) {
+
     header .container-fluid,
     section .container-fluid,
     footer .container-fluid {
@@ -75,4 +83,3 @@
     position: relative;
     z-index: 100;
 }
-
